@@ -1,4 +1,4 @@
-import Card from './lib.js'
+import {Card} from './lib.js'
 
 const Menu = () => {
     
@@ -9,7 +9,7 @@ const Menu = () => {
         pagehead.textContent = "Menu"
         aboutcontent.appendChild(pagehead)
 
-        let appetizers = new Card(
+        let appetizers = Card(
             "Appetizers",
             "Hash Browns\t$2 (1pc)\n" +
             "Chips\t$6\n" +
@@ -17,7 +17,7 @@ const Menu = () => {
         )
         aboutcontent.appendChild(appetizers)
 
-        let soup = new Card(
+        let soup = Card(
             "Soup",
             "Chicken Potato Soup\t$5\n" +
             "Beef Potato Soup\t$7\n" +
@@ -25,7 +25,7 @@ const Menu = () => {
         )
         aboutcontent.appendChild(soup)
 
-        let entree = new Card(
+        let entree = Card(
             "Entree",
             "Croquee Burger\t$8\n" +
             "Pulled Pork Gnocchi\t$12\n" +
@@ -34,14 +34,14 @@ const Menu = () => {
         )
         aboutcontent.appendChild(entree)
 
-        let dessert = new Card(
+        let dessert = Card(
             "Dessert",
             "Mashed Potato Truffles\t$10\n" +
             "Potato Caramel Cake\t$9\n"
         )
         aboutcontent.appendChild(dessert)
 
-        let drinks = new Card(
+        let drinks = Card(
             "Beverages",
             "Soda\t$1.5\n" +
             "Orange Juice\t$1.5\n" +

@@ -2,11 +2,11 @@ const Card = (title, content) => {
         let card = document.createElement('div')
         card.className = "card"
 
-        let head = document.createElement('div')
+        let head = document.createElement('h4')
         head.textContent = title
         head.className = "card-title"
 
-        let body = document.createElement('div')
+        let body = document.createElement('p')
         body.textContent = content
         body.className = "card-body"
 
@@ -16,4 +16,4 @@ const Card = (title, content) => {
         return card;
 }
 
-export default Card
+export {Card}
