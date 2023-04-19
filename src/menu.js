@@ -4,10 +4,7 @@ const Menu = () => {
     
     let Page = () => {
         let aboutcontent = document.createElement('div')
-        let pagehead = document.createElement('div')
-        pagehead.className = "page-title"
-        pagehead.textContent = "Menu"
-        aboutcontent.appendChild(pagehead)
+        aboutcontent.className = 'content-container'
 
         let appetizers = Card(
             "Appetizers",

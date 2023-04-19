@@ -1,0 +1,112 @@
+html, body{
+    margin: 0;
+    padding: 0;
+    max-width: 100%;
+    width: 100%;
+    height: 100%;
+    font:20px;
+}
+
+h1, h2, h3, h4, h5, h6, p{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-color: burlywood;
+}
+
+#content{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.content-header{
+    background-color: brown;
+    flex-grow: none;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-title{
+    font-size: 2.5rem;
+    padding: 2vh 0 2vh;
+    color: white;
+}
+
+.header-button-container{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.header-button{
+    background-color: burlywood;
+    border-radius: 5px 5px 0 0;
+    padding: 10px 20px 10px ;
+    cursor: pointer;
+}
+
+.content-body{
+    flex:1 1 100%;
+    display:flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    height: fit-content;
+    padding: 5vh;
+}
+
+.content-container{
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+    gap: 30px;
+    width: fit-content;
+}
+
+.page-title{
+    width: 40vw;
+    outline: solid;
+    text-align: center;
+}
+
+.card{
+    width: 40vw;
+    outline: solid;
+    text-align: center;
+    padding: 20px;
+}
+
+.card-title{
+    padding-bottom: 1vh;
+}
+
+.submit-form{
+    padding-top: 2vh;
+    display:grid;
+    justify-content: center;
+    grid-template-rows: 5vh 7vh 3vh;
+    grid-template-columns: 10vw 10vw 10vw;
+}
+
+.contact-input{
+    grid-row: 1/3;
+    grid-column: 1/4;
+}
+
+.contact-button{
+    grid-row: 3/4;
+    grid-column: 3/4;
+}
+
+.content-footer{
+    flex:0 0;
+    color: white;
+    text-align: center;
+    padding: 3vh;
+    background-color: brown;
+}

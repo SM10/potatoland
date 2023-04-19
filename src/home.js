@@ -4,13 +4,10 @@ const Home = () => {
     
     let Page = () => {
         let aboutcontent = document.createElement('div')
-        let pagehead = document.createElement('div')
-        pagehead.className = "page-title"
-        pagehead.textContent = "PotatoLand"
-        aboutcontent.appendChild(pagehead)
+        aboutcontent.className = 'content-container'
 
         let about = Card(
-            "",
+            "PotatoLand",
             ["The best potatoes in town! We serve only the best free-range, grass-fed potatoes, picked freshly off their trees every morning."]
         )
         aboutcontent.appendChild(about)

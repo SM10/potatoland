@@ -1,6 +1,7 @@
 import Home from './home.js'
 import Menu from './menu.js'
 import Contact from './contact.js'
+import './style.css'
 
 const pages = ['Home', 'Menu', 'Contact']
 const importedfunctions = {Home, Menu, Contact}
@@ -9,6 +10,11 @@ const importedfunctions = {Home, Menu, Contact}
 let content = document.querySelector("#content")
 content.appendChild(CreateHeader())
 content.appendChild(CreateBody())
+let contentbody = document.querySelector('.content-body')
+contentbody.innerHTML = ''
+contentbody.appendChild(Home().Page())
+content.appendChild(CreateFooter())
+
 
 function CreateHeader(){
     let header = document.createElement('div')
@@ -23,7 +29,7 @@ function CreateHeader(){
     buttonhead.className = 'header-button-container'
     
     pages.forEach((pagename) => {
-        let pagebutton = document.createElement('button')
+        let pagebutton = document.createElement('div')
         pagebutton.className = 'header-button'
         pagebutton.id = pagename.toLowerCase() + '-button'
         pagebutton.textContent = pagename
@@ -45,4 +51,12 @@ function CreateBody(){
     let body = document.createElement('div')
     body.className = 'content-body'
     return body
+}
+
+function CreateFooter(){
+    let contentfooter = document.createElement('div')
+    contentfooter.className = "content-footer"
+    contentfooter.textContent = "Made by Stephen Man"
+
+    return contentfooter
 }
